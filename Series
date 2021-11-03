@@ -1,1 +1,29 @@
+#include<stdio.h>
 
+int main()
+{   int k,sum=1,cat=1,n;
+    printf("Enter the size\n");
+    scanf("%d",&n);
+    for(k=1; k<=n; k++)
+    {   if(k==1)
+        {
+            printf("%d ",sum);
+        }
+        if(k==2)
+        {
+            printf("%d ",sum);
+        }
+        if(k%2==0 && k>2)
+        {
+            sum=sum*3;
+            printf("%d ",sum);
+
+        }
+        if(k%2==1 && k>2)
+        {
+            cat=cat*2;
+            printf("%d ",cat);
+
+        }
+    }
+}
